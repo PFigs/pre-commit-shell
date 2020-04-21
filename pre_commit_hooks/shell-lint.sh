@@ -9,7 +9,7 @@ DEBUG=${DEBUG:=0}
 
 if ! command which shellcheck &>/dev/null; then
   >&2 echo 'shellcheck command not found'
-  exit 1
+  exit 0
 fi
 
 shellcheck "$@"
